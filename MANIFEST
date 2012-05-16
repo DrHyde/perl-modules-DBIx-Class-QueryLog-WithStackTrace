@@ -1,6 +1,6 @@
 README
 ARTISTIC.txt
-CHANGES
+CHANGELOG
 GPL2.txt
 t/all.t
 t/lib/DCQWTestSchema.pm
