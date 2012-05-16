@@ -4,7 +4,7 @@ WriteMakefile(
   META_MERGE => {
     license => 'other',
     resource => {
-      repository => 'https://github.com/DrHyde/perl-modules-DBIx-Class-QueryLog-WithStackTrace'
+      repository => 'https://github.com/DrHyde/DBIx-Class-QueryLog-WithStackTrace'
     }
   },
   VERSION_FROM => 'lib/DBIx/Class/QueryLog/WithStackTrace.pm',
