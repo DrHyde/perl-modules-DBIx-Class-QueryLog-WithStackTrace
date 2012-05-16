@@ -2,6 +2,8 @@ package DBIx::Class::QueryLog::WithStackTrace::Query;
 
 use Moose;
 
+our $VERSION = '1.0';
+
 extends 'DBIx::Class::QueryLog::Query';
 
 has stacktrace => (
