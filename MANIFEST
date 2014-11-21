@@ -11,3 +11,4 @@ lib/DBIx/Class/QueryLog/WithStackTrace.pm
 lib/DBIx/Class/QueryLog/WithStackTrace/Query.pm
 Makefile.PL
 MANIFEST
+MANIFEST.SKIP
