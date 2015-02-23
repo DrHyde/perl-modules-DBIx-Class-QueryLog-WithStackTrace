@@ -3,8 +3,9 @@ WriteMakefile(
   NAME  => 'DBIx::Class::QueryLog::WithStackTrace',
   META_MERGE => {
     license => 'other',
-    resource => {
-      repository => 'https://github.com/DrHyde/DBIx-Class-QueryLog-WithStackTrace'
+    resources => {
+      repository => 'https://github.com/DrHyde/DBIx-Class-QueryLog-WithStackTrace',
+      bugtracker => 'https://github.com/DrHyde/DBIx-Class-QueryLog-WithStackTrace/issues',
     }
   },
   VERSION_FROM => 'lib/DBIx/Class/QueryLog/WithStackTrace.pm',
