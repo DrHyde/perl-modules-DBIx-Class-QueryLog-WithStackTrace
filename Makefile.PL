@@ -2,7 +2,7 @@ use ExtUtils::MakeMaker;
 WriteMakefile(
   NAME  => 'DBIx::Class::QueryLog::WithStackTrace',
   META_MERGE => {
-    license => 'other',
+    license => 'open_source',
     resources => {
       repository => 'https://github.com/DrHyde/perl-modules-DBIx-Class-QueryLog-WithStackTrace',
       bugtracker => 'https://github.com/DrHyde/perl-modules-DBIx-Class-QueryLog-WithStackTrace/issues',
