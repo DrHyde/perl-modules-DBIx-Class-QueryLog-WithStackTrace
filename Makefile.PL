@@ -10,7 +10,6 @@ WriteMakefile(
   },
   VERSION_FROM => 'lib/DBIx/Class/QueryLog/WithStackTrace.pm',
   PREREQ_PM => {
-    'version'               => 0,
     'Devel::StackTrace'     => 1.21,
     'Moose'                 => 0.90,
     'DBIx::Class::QueryLog' => 1.003002,
