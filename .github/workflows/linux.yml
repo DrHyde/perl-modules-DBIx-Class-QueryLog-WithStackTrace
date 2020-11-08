@@ -12,7 +12,8 @@ jobs:
         shell: perl {0}
         run: |
           use Actions::Core;
-          set_output(matrix => {perl => [perl_versions()]});
+          # these versions have random segfaults when testing deps
+          set_output(matrix => {perl => [grep { $_ !~ /^5.(18|20)/ } perl_versions()]});
     outputs:
       matrix: ${{ steps.set-matrix.outputs.matrix }}
 
