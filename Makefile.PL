@@ -11,7 +11,7 @@ WriteMakefile(
   VERSION_FROM => 'lib/DBIx/Class/QueryLog/WithStackTrace.pm',
   PREREQ_PM => {
     'Devel::StackTrace'     => 1.21,
-    'Moose'                 => 0.90,
+    'Moose'                 => '2.2000',
     'DBIx::Class::QueryLog' => 1.003002,
     # and for testing ...
     'File::Temp'            => 0,
