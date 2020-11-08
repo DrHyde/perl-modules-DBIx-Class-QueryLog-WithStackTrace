@@ -18,11 +18,12 @@ task:
     - curl -L https://install.perlbrew.pl | bash
     - source ~/perl5/perlbrew/etc/bashrc
     - perlbrew init
-    - perlbrew install perl-5.30.3
-    - echo|cpan App::cpanminus
-    - /Users/anka/perl5/bin/cpanm TAP::Harness::Env
-    - /Users/anka/perl5/bin/cpanm --installdeps . || cat /Users/anka/.cpanm/work/*/build.log
-    - export PERL5LIB=/Users/anka/perl5/lib/perl5
+    - perlbrew install -v perl-5.30.3
+    - perlbrew switch perl-5.30.3
+    - perlbrew install-cpanm -f
+    - perl -v
+    - cpanm TAP::Harness::Env
+    - cpanm --installdeps . || cat /Users/anka/.cpanm/work/*/build.log
     - perl Makefile.PL
     - make
     - make test
