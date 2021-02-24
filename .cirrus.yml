@@ -23,7 +23,7 @@ task:
     - perlbrew install-cpanm -f
     - perl -v
     - cpanm TAP::Harness::Env
-    - cpanm --installdeps . || cat /Users/anka/.cpanm/work/*/build.log
+    - cpanm --installdeps . || cat /Users/admin/.cpanm/work/*/build.log
     - perl Makefile.PL
     - make
     - make test
