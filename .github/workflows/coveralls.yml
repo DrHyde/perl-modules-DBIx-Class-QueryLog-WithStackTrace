@@ -6,9 +6,13 @@ on:
     paths:
       - '.github/workflows/coveralls.yml'
       - '.github/workflows/run-coveralls'
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
 name: Generate Coveralls report
 jobs:
   build:
+    if: github.actor != 'dependabot[bot]'
     runs-on: 'ubuntu-latest'
     steps:
       - uses: actions/checkout@v7

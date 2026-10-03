@@ -7,8 +7,12 @@ on:
     paths:
       - '.github/workflows/windows.yml'
       - '.github/workflows/run-windows'
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
 jobs:
   build:
+    if: github.actor != 'dependabot[bot]'
     runs-on: windows-latest
     strategy:
       fail-fast: false
