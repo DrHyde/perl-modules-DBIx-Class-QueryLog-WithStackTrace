@@ -1,8 +1,10 @@
 use ExtUtils::MakeMaker;
 WriteMakefile(
   NAME  => 'DBIx::Class::QueryLog::WithStackTrace',
-  META_MERGE => {
+  META_ADD => {
     license => 'open_source',
+},
+META_MERGE => {
     resources => {
       repository => 'https://github.com/DrHyde/perl-modules-DBIx-Class-QueryLog-WithStackTrace',
       bugtracker => 'https://github.com/DrHyde/perl-modules-DBIx-Class-QueryLog-WithStackTrace/issues',
